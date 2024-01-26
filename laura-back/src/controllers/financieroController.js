@@ -1,0 +1,19 @@
+const {Financiero} = require("../db")
+
+module.exports = {
+    getFinanza: async () => {
+        const finanza = await Financiero.findAll()
+        return finanza
+    },
+    newPay: async (data) => {
+        await Financiero.create(data)
+        return "Creado exitosamente"
+    },
+    deletePay: async (id) => {
+        const pay = await Financiero.findByPk(id)
+        if(pay){
+            await pay.destroy()
+            return "Eliminado"
+        }else return "No encontrado"
+    }
+}

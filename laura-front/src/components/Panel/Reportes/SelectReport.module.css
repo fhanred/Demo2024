@@ -1,0 +1,67 @@
+.agenda{
+    text-align: center;
+}
+
+
+.button{
+    z-index: 2;
+    font-weight: 100;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    transition: .3s;
+    background-color: black;
+    border-radius: 10px;
+    border: 0;
+    padding: 5px 20px;
+    font-size: 1.2em;
+    margin-top: 50px;
+    height: fit-content;
+}
+
+.button:hover{
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+
+.especialista{
+    display: flex;
+    margin: 0 auto;
+    background-color: rgb(255, 255, 255);
+    width: 350px;
+    border-radius: 6px;
+    padding: 10px;
+    gap: 20px;
+    border: 2px solid rgb(238, 238, 238);
+    transition: .3s;
+    cursor: pointer;
+}
+
+.especialista:hover{
+    border: 2px solid rgb(162, 162, 162);
+}
+
+.userImage{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.detailContainer{
+    text-align: left;
+    margin-top: 10px;
+}
+.name{
+    line-height: 0;
+    font-size: 1.2em;
+}
+
+.especialidad{
+    color: rgb(157, 157, 157);
+}
+
+.nameCity{
+    margin: 0 auto;
+    font-size: 1.1em;
+    padding: 10px 0px;
+}
